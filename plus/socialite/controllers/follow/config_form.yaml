@@ -1,0 +1,10 @@
+name: Follow
+form: $/plus/socialite/models/followmodel/fields.yaml
+modelClass: Plus\Socialite\Models\FollowModel
+defaultRedirect: plus/socialite/follow
+create:
+    redirect: 'plus/socialite/follow/update/:id'
+    redirectClose: plus/socialite/follow
+update:
+    redirect: plus/socialite/follow
+    redirectClose: plus/socialite/follow

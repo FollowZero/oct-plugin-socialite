@@ -1,0 +1,262 @@
+tabs:
+    fields:
+        login_redirection_url:
+            label: '登录成功跳转页面'
+            span: auto
+            comment: 如：user/index
+            tab: 通用设置
+        user_bind_url:
+            label: '用户绑定页面'
+            span: auto
+            comment: 如：user/bind
+            tab: 通用设置
+        auth_bind_url:
+            label: '登录绑定页面'
+            span: auto
+            comment: 如：auth/bind
+            tab: 通用设置
+        can_bind_register:
+            label: '是否可以注册绑定'
+            span: auto
+            type: switch
+            tab: 通用设置
+        noop_feishu:
+            type: partial
+            path: $/plus/socialite/partials/backend/forms/settings/_feishu_info.htm
+            tab: 飞书
+        providers[feishu][enabled]:
+            label: '是否启用'
+            span: left
+            type: checkbox
+            tab: 飞书
+        providers[feishu][client_id]:
+            label: 'App ID'
+            span: left
+            type: text
+            tab: 飞书
+        providers[feishu][client_secret]:
+            label: 'App Secret'
+            span: left
+            type: text
+            tab: 飞书
+        providers[feishu][app_ticket]:
+            label: 'app_ticket'
+            span: left
+            type: text
+            tab: 飞书
+        providers[feishu][title]:
+            label: '标题'
+            span: left
+            comment: 如：飞书
+            tab: 飞书
+        cover_feishu:
+            label: '图标'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: left
+            type: fileupload
+            tab: 飞书
+        noop_github:
+            type: partial
+            path: $/plus/socialite/partials/backend/forms/settings/_github_info.htm
+            tab: Github
+        providers[github][enabled]:
+            label: '是否启用'
+            span: left
+            type: checkbox
+            tab: Github
+        providers[github][client_id]:
+            label: 'App ID'
+            span: left
+            type: text
+            tab: Github
+        providers[github][client_secret]:
+            label: 'App Secret'
+            span: left
+            type: text
+            tab: Github
+        providers[github][title]:
+            label: '标题'
+            span: left
+            comment: 如：Github
+            tab: Github
+        cover_github:
+            label: '图标'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: left
+            type: fileupload
+            tab: Github
+        noop_alipaydev:
+            type: partial
+            path: $/plus/socialite/partials/backend/forms/settings/_alipaydev_info.htm
+            tab: 支付宝沙箱
+        providers[alipaydev][enabled]:
+            label: '是否启用'
+            span: left
+            type: checkbox
+            tab: 支付宝沙箱
+        providers[alipaydev][client_id]:
+            label: 'App ID'
+            span: left
+            type: text
+            tab: 支付宝沙箱
+        providers[alipaydev][client_secret]:
+            label: '应用私钥'
+            span: left
+            type: textarea
+            size: large
+            comment: 建议： 为了保证安全，你可以将文本信息从磁盘文件中读取，而不是在这里明文
+            tab: 支付宝沙箱
+        providers[alipaydev][title]:
+            label: '标题'
+            span: left
+            comment: 如：支付宝沙箱
+            tab: 支付宝沙箱
+        cover_alipaydev:
+            label: '图标'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: left
+            type: fileupload
+            tab: 支付宝沙箱
+        noop_xiaomi:
+            type: partial
+            path: $/plus/socialite/partials/backend/forms/settings/_xiaomi_info.htm
+            tab: 小米
+        providers[xiaomi][enabled]:
+            label: '是否启用'
+            span: left
+            type: checkbox
+            tab: 小米
+        providers[xiaomi][client_id]:
+            label: 'App ID'
+            span: left
+            type: text
+            tab: 小米
+        providers[xiaomi][client_secret]:
+            label: 'App Secret'
+            span: left
+            type: text
+            tab: 小米
+        providers[xiaomi][title]:
+            label: '标题'
+            span: left
+            comment: 如：小米
+            tab: 小米
+        cover_xiaomi:
+            label: '图标'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: left
+            type: fileupload
+            tab: 小米
+        noop_gitee:
+            type: partial
+            path: $/plus/socialite/partials/backend/forms/settings/_gitee_info.htm
+            tab: 码云
+        providers[gitee][enabled]:
+            label: '是否启用'
+            span: left
+            type: checkbox
+            tab: 码云
+        providers[gitee][client_id]:
+            label: 'Client ID'
+            span: left
+            type: text
+            tab: 码云
+        providers[gitee][client_secret]:
+            label: 'Client Secret'
+            span: left
+            type: text
+            tab: 码云
+        providers[gitee][title]:
+            label: '标题'
+            span: left
+            comment: 如：码云
+            tab: 码云
+        cover_gitee:
+            label: '图标'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: left
+            type: fileupload
+            tab: 码云
+        noop_gitlab:
+            type: partial
+            path: $/plus/socialite/partials/backend/forms/settings/_gitlab_info.htm
+            tab: GitLab
+        providers[gitlab][enabled]:
+            label: '是否启用'
+            span: left
+            type: checkbox
+            tab: GitLab
+        providers[gitlab][client_id]:
+            label: 'Application ID'
+            span: left
+            type: text
+            tab: GitLab
+        providers[gitlab][client_secret]:
+            label: 'Secret'
+            span: left
+            type: text
+            tab: GitLab
+        providers[gitlab][title]:
+            label: '标题'
+            span: left
+            comment: 如：GitLab
+            tab: GitLab
+        cover_gitlab:
+            label: '图标'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: left
+            type: fileupload
+            tab: GitLab
+#        noop_wechat:
+#            type: partial
+#            path: $/plus/socialite/partials/backend/forms/settings/_wechat_info.htm
+#            tab: 微信
+#        providers[wechat][enabled]:
+#            label: '是否启用'
+#            span: left
+#            type: checkbox
+#            tab: 微信
+#        providers[wechat][client_id]:
+#            label: 'Application ID'
+#            span: left
+#            type: text
+#            tab: 微信
+#        providers[wechat][client_secret]:
+#            label: 'Secret'
+#            span: left
+#            type: text
+#            tab: 微信
+#        providers[wechat][title]:
+#            label: '标题'
+#            span: left
+#            comment: 如：微信
+#            tab: 微信
+#        cover_wechat:
+#            label: '图标'
+#            mode: image
+#            imageWidth: '100'
+#            imageHeight: '100'
+#            span: left
+#            type: fileupload
+#            tab: 微信
+#        providers[wechat][component][component_app_id]:
+#            label: 'component_app_id'
+#            span: left
+#            tab: 微信
+#        providers[wechat][component][component_access_token]:
+#            label: 'component_access_token'
+#            span: left
+#            tab: 微信
+

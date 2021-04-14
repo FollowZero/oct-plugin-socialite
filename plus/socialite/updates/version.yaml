@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 创建第三方授权关注表
+    - builder_table_create_plus_socialite_follow.php

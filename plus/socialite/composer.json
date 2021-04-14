@@ -1,0 +1,5 @@
+{
+    "require": {
+        "overtrue/socialite": "3.2.1"
+    }
+}

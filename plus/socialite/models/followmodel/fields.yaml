@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 名称
+        span: auto
+        type: text

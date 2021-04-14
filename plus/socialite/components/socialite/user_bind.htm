@@ -1,0 +1,47 @@
+<table class="ui celled table">
+    <thead>
+    <tr>
+        <th>第三方平台名称</th>
+        <th>状态</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for name,link in social_links %}
+
+    <tr>
+        <td>
+            {% if link.cover_path %}
+                <img src="{{ link.cover_path }}" alt="">
+            {% endif %}
+            {{ link.title }}
+        </td>
+
+        {% if link.status == 1 %}
+        <td>
+            已绑定
+        </td>
+        <td>
+            <form
+                    data-request="onUnbind"
+                    data-request-update="'{{ __SELF__ }}::user_bind': '#user_bind'"
+            >
+                <div class="form-group">
+                    <input name="provider" type="hidden" value="{{ name }}">
+                </div>
+                <button type="submit" class="btn btn-default">解除绑定</button>
+            </form>
+        </td>
+        {% else %}
+        <td>
+            未绑定
+        </td>
+        <td>
+            <a href="{{ link.url }}" class="btn btn-default">立即绑定</a>
+        </td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>

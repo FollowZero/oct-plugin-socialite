@@ -1,0 +1,6 @@
+plugin:
+    name: 'plus.socialite::lang.plugin.name'
+    description: 'plus.socialite::lang.plugin.description'
+    author: plus
+    icon: oc-icon-user-secret
+    homepage: ''
